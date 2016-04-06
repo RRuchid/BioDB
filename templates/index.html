@@ -1,18 +1,51 @@
-{% extends "layout.html" %}
+<!DOCTYPE HTML>
+<html>
 
-{% block content %}
-<h1>UMW Biological Seeds Database </h1>
-<p>Welcome to the Biological Seeds Database 
-  <a href="http://umw.edu">University of Mary Washington</a></p>
+<head>
+  <title>Biological Seed Database</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div class = "wrapper">
+        <img src="{{ url_for('static', filename='img/bioSeedDatabaseLogo.png') }}" alt ="BioSeedLogo" style = "width:150px;height:150px;" ></img>
+      
+      
+        
+        <!-- class="logo_colour", allows you to change the colour of the text -->
+        <h1><a href="/"><span class="logo_colour"> Biological Seed Database System {{selectedMenu}}</span></a></h1>
+        
+            <h1{% if selectedMenu == "Login" %} class="selected" {% endif %}  >
+            <a href ="/loginScreen"><button class = "button"> Login</button></a>
+
+
+       
+      
+
+       </div>
+
+
+    </div>
+  </div>
   
-					
-					<img src="{{ url_for('static', filename='img/bioSeedDatabaseLogo.png') }}" />
-        <p>Sighting by the <strong>UMW Research Team</strong> near <strong>Area 51</strong></p>
-        <p>You can view our entire list of abductions by clicking the tab above!</p>
-        <h2>Current Advisories:</h2>
-        <ul>
-          <li>21 January 2014. <strong>Tall Whites</strong> spotted near Slaughter Canyon, NV. Use extreme caution</li>
-          <li>20 January 2014. <strong>Tall Whites</strong> spotted near Reno, NV. </li>
+<!--<script src="html2csv.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<!--<script src="https:///code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--<script src="https://codeorigin.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>-->
 
-        </ul>
-{% endblock %}
+<!--<p class="tagline">From Cloud9 IDE!</p>-->
+        
+        <!-- load scripts at the bottom of your page -->
+        
+
+<!--        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+<!--        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--        <script src="site.js"></script>-->
+
+</body>
+</html>

@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6
 h2
 { font: normal 165% 'century gothic', arial, sans-serif;
   color: #B60000;}
+  
+label
+{ font: normal 165% 'century gothic', arial, sans-serif;
+  color: #B60000;}  
 
 h3
 { font: normal 165% 'century gothic', arial, sans-serif;}
@@ -169,7 +173,7 @@ ul#menu li a:hover
 
 .sidebar
 { float: right;
-  width: 190px;
+  width: 250px;
   padding: 0 15px 20px 15px;}
 
 .sidebar ul
@@ -192,7 +196,7 @@ ul#menu li a:hover
 
 #content
 { text-align: left;
-  width: 613px;
+  width: 850px;
   padding: 0;}
 
 #footer
@@ -221,7 +225,7 @@ ul#menu li a:hover
 .search
 { color: #555; 
   border: 1px solid #DDD; 
-  width: 134px;
+  width: 500px;
   padding: 5px;}
   
 .form_settings
@@ -288,3 +292,17 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+
+.wrapper {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.button {
+    position: relative;
+    top: 0;
+    background-color: #0B610B;
+    color: #FFFFFF;
+    padding:10px;
+    border-radius: 10px;
+}
